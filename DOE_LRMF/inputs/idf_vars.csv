@@ -1,33 +1,62 @@
 ﻿Description,jEplus - Variable,Object Type,Name,Value,Models
-Exterior wall U-value,@@WALLU@@,Material,wall_consol_layer,Conductivity,all
-Ceiling U-value,@@CEILINGU@@,Material,ceil_consol_layer,Conductivity,all
-Foundation U-value,@@FNDNU@@,Material,floor_consol_layer,Conductivity,all
+Exterior wall U-value,@@WALLU@@,Material,wall_consol_layer,Conductivity,idfs
+Ceiling U-value,@@CEILINGU@@,Material,ceil_consol_layer,Conductivity,idfs
+Slab U-value,@@FNDNU@@,Material,floor_consol_layer,Conductivity,idfs
 bsmt wall U-value,@@BSMTWU@@,Material,bsmtwall_consol_layer,Conductivity,bsmt
-Windows U-value,@@WINU@@,WindowMaterial:SimpleGlazingSystem,Glass,UFactor,all
-Windows SHGC,@@SHGC@@,WindowMaterial:SimpleGlazingSystem,Glass,UFactor,all
-Corridor heating efficiency (COP),@@CORHTCOP@@,Coil:Heating:DX:SingleSpeed,listCorridorsDXheat,Gross_Rated_Heating_COP,common
-Corridor heating efficiency curves,@@CORHTCURVES@@,Coil:Heating:DX:SingleSpeed,listHVACtypeCurveHeat,listDXcurves,common
-Corridor heating setpoint temp (F),@@CORHTST@@,Schedule:Compact,heating_sch_corr,Field 4,common
-Corridor cooling efficiency (COP),@@CORCLCOP@@,Coil:Cooling:DX:SingleSpeed,listCorridorsDXcool,Gross_Rated_Cooling_COP,common
-Corridor cooling efficiency curves,@@CORCLCURVES@@,Coil:Cooling:DX:SingleSpeed,listHVACtypeCurveCool,listDXcurves,common
-Corridor cooling setpoint temp (F),@@CORCLST@@,Schedule:Compact,cooling_sch_corr,Field 4,common
-Bsmt heating efficiency (COP),@@BSMTHTCOP@@,Coil:Heating:DX:SingleSpeed,listBsmtsDXheat,Gross_Rated_Heating_COP,bsmt
-Bsmt Heating efficiency curves,@@BSMTHTCURVES@@,Coil:Heating:DX:SingleSpeed,listHVACtypeCurveHeat,listDXcurves,bsmt
-bsmt heating setpoint temp (F),@@BSMTHTST@@,Schedule:Compact,heating_sch_bsmt,Field 4,bsmt
-Bsmt cooling efficiency (COP),@@BSMTCLCOP@@,Coil:Cooling:DX:SingleSpeed,listBsmtsDXcool,Gross_Rated_Cooling_COP,bsmt
-Bsmt cooling efficiency curves,@@BSMTCLCURVES@@,Coil:Cooling:DX:SingleSpeed,listHVACtypeCurveCool,listDXcurves,bsmt
-bsmt cooling setpoint temp (F),@@BSMTCLST@@,Schedule:Compact,cooling_sch_bsmt,Field 4,bsmt
-LPD - corridor (W/sf),@@LPDCOR@@,Lights,listCorrLights,Watts per Zone Floor Area,common
-Lighting Stairwell (W),@@LTGSTR@@,Exterior:Lights,stairLtgs,Design Level,all
-exterior corridor LPD (W),@@LTGEXTCOR@@,Exterior:Lights,CorrExtLights,Design Level,garden
-internal parking LPD (W/sf),@@LTGINTPKG@@,Exterior:Lights,intPrkLtgs,Design Level,all
-external parking LPD (W/sf),@@LTGEXTPKG@@,Exterior:Lights,extPrkLtgs,Design Level,all
-In-unit heating efficiency (COP),@@UNITHTCOP@@,Coil:Heating:DX:SingleSpeed,listUnitDXheat,Gross_Rated_Heating_COP,all
-In-unit heating efficiency curves,@@UNITHTCURVES@@,Coil:Heating:DX:SingleSpeed,listHVACtypeCurveHeat,listDXcurves,all
-in-unit heating setpoint temp (F),@@UNITHTST@@,Schedule:Compact,heating_sch_unit,Field 4,all
-In-unit cooling efficiency (COP),@@UNITCLCOP@@,Coil:Cooling:DX:SingleSpeed,listUnitDXcool,Gross_Rated_Cooling_COP,all
-In-unit cooling efficiency curves,@@UNITCLCURVES@@,Coil:Cooling:DX:SingleSpeed,listHVACtypeCurveCool,listDXcurves,all
-In-unit cooling setpoint temp (F),@@UNITCLST@@,Schedule:Compact,cooling_sch_unit,Field 4,all
-In-unit LPD (W/sf),@@UNITLPD@@,Lights,listUnitLights,Watts per Zone Floor Area,all
-In-unit DHW efficiency,@@DHWCOP@@,WaterHeater:Mixed,listWaterHeaters,Heater Thermal Efficiency,all
-Distribution Load (W/unit),@@DHWGAIN@@,WaterHeater:Mixed,listWaterHeaters,listDHWlosses,all
+Floor U-value,@@BSMTWU@@,Material,exposed_floor_consol_layer,Conductivity,bsmt
+Windows U-value,@@WINU@@,WindowMaterial:SimpleGlazingSystem,Glass,UFactor,idfs
+Windows SHGC,@@SHGC@@,WindowMaterial:SimpleGlazingSystem,Glass,Solar_Heat_Gain_Coefficient,idfs
+Lighting Stairwell (W),@@LTGSTR@@,Exterior:Lights,stairLights,Design_Level,idfs
+exterior corridor LPD (W),@@LTGEXTCOR@@,Exterior:Lights,corrExtLights,Design_Level,garden
+internal parking LPD (W/sf),@@LTGINTPKG@@,Exterior:Lights,intPrkLights,Design_Level,idfs
+external parking LPD (W/sf),@@LTGEXTPKG@@,Exterior:Lights,extPrkLights,Design_Level,idfs
+in-unit heating setpoint temp (F),@@UNITHTST@@,Schedule:Compact,heating_sch_unit,Field_4,idfs
+In-unit cooling setpoint temp (F),@@UNITCLST@@,Schedule:Compact,cooling_sch_unit,Field_4,idfs
+Corridor heating setpoint temp (F),@@CORHTST@@,Schedule:Compact,heating_sch_corr,Field_4,common
+Corridor cooling setpoint temp (F),@@CORCLST@@,Schedule:Compact,cooling_sch_corr,Field_4,common
+bsmt heating setpoint temp (F),@@BSMTHTST@@,Schedule:Compact,heating_sch_bsmt,Field_4,bsmt
+bsmt cooling setpoint temp (F),@@BSMTCLST@@,Schedule:Compact,cooling_sch_bsmt,Field_4,bsmt
+Corridor heating efficiency (COP),@@CORHTCOP@@,Coil:Heating:DX:SingleSpeed,CorridorsDXheat_dict,Gross_Rated_Heating_COP,common
+Corridor heating efficiency curves,@@CORHTCURVE_CAPFT@@,Coil:Heating:DX:SingleSpeed,CorridorsDXheat_dict,Heating_Capacity_Function_of_Temperature_Curve_Name,common
+Corridor heating efficiency curves,@@CORHTCURVE_CAPFFF@@,Coil:Heating:DX:SingleSpeed,CorridorsDXheat_dict,Heating_Capacity_Function_of_Flow_Fraction_Curve_Name,common
+Corridor heating efficiency curves,@@CORHTCURVE_EIRFT@@,Coil:Heating:DX:SingleSpeed,CorridorsDXheat_dict,Energy_Input_Ratio_Function_of_Temperature_Curve_Name,common
+Corridor heating efficiency curves,@@CORHTCURVE_EIRFFF@@,Coil:Heating:DX:SingleSpeed,CorridorsDXheat_dict,Energy_Input_Ratio_Function_of_Flow_Fraction_Curve_Name,common
+Corridor heating efficiency curves,@@CORHTCURVE_PLFFPLR@@,Coil:Heating:DX:SingleSpeed,CorridorsDXheat_dict,Part_Load_Fraction_Correlation_Curve_Name,common
+Corridor heating efficiency curves,@@CORHTCURVE_DEFROST@@,Coil:Heating:DX:SingleSpeed,CorridorsDXheat_dict,Defrost_Energy_Input_Ratio_Function_of_Temperature_Curve_Name,common
+Corridor cooling efficiency (COP),@@CORCLCOP@@,Coil:Cooling:DX:SingleSpeed,CorridorsDXcool_dict,Gross_Rated_Cooling_COP,common
+Corridor cooling efficiency curves,@@CORCLCURVE_CAPFT@@,Coil:Cooling:DX:SingleSpeed,CorridorsDXcool_dict,Total_Cooling_Capacity_Function_of_Temperature_Curve_Name,common
+Corridor cooling efficiency curves,@@CORCLCURVE_CAPFFF@@,Coil:Cooling:DX:SingleSpeed,CorridorsDXcool_dict,Total_Cooling_Capacity_Function_of_Flow_Fraction_Curve_Name,
+Corridor cooling efficiency curves,@@CORCLCURVE_EIRFT@@,Coil:Cooling:DX:SingleSpeed,CorridorsDXcool_dict,Energy_Input_Ratio_Function_of_Temperature_Curve_Name,
+Corridor cooling efficiency curves,@@CORCLCURVE_EIRFFF@@,Coil:Cooling:DX:SingleSpeed,CorridorsDXcool_dict,Energy_Input_Ratio_Function_of_Flow_Fraction_Curve_Name,
+Corridor cooling efficiency curves,@@CORCLCURVE_PLFFPLR@@,Coil:Cooling:DX:SingleSpeed,CorridorsDXcool_dict,Part_Load_Fraction_Correlation_Curve_Name,
+Bsmt heating efficiency (COP),@@BSMTHTCOP@@,Coil:Heating:DX:SingleSpeed,BsmtDXheat_dict,Gross_Rated_Heating_COP,bsmt
+Bsmt Heating efficiency curves,@@BSMTHTCURVE_CAPFT@@,Coil:Heating:DX:SingleSpeed,BsmtDXheat_dict,Heating_Capacity_Function_of_Temperature_Curve_Name,bsmt
+Bsmt Heating efficiency curves,@@BSMTHTCURVE_CAPFFF@@,Coil:Heating:DX:SingleSpeed,BsmtDXheat_dict,Heating_Capacity_Function_of_Flow_Fraction_Curve_Name,bsmt
+Bsmt Heating efficiency curves,@@BSMTHTCURVE_EIRFT@@,Coil:Heating:DX:SingleSpeed,BsmtDXheat_dict,Energy_Input_Ratio_Function_of_Temperature_Curve_Name,bsmt
+Bsmt Heating efficiency curves,@@BSMTHTCURVE_EIRFFF@@,Coil:Heating:DX:SingleSpeed,BsmtDXheat_dict,Energy_Input_Ratio_Function_of_Flow_Fraction_Curve_Name,bsmt
+Bsmt Heating efficiency curves,@@BSMTHTCURVE_PLFFPLR@@,Coil:Heating:DX:SingleSpeed,BsmtDXheat_dict,Part_Load_Fraction_Correlation_Curve_Name,bsmt
+Bsmt Heating efficiency curves,@@BSMTHTCURVE_DEFROST@@,Coil:Heating:DX:SingleSpeed,BsmtDXheat_dict,Defrost_Energy_Input_Ratio_Function_of_Temperature_Curve_Name,bsmt
+Bsmt cooling efficiency (COP),@@BSMTCLCOP@@,Coil:Cooling:DX:SingleSpeed,CorridorsDXcool_dict,Gross_Rated_Cooling_COP,bsmt
+Bsmt cooling efficiency curves,@@BSMTCLCURVE_CAPFT@@,Coil:Cooling:DX:SingleSpeed,CorridorsDXcool_dict,Total_Cooling_Capacity_Function_of_Temperature_Curve_Name,bsmt
+Bsmt cooling efficiency curves,@@BSMTCLCURVE_CAPFFF@@,Coil:Cooling:DX:SingleSpeed,CorridorsDXcool_dict,Total_Cooling_Capacity_Function_of_Flow_Fraction_Curve_Name,
+Bsmt cooling efficiency curves,@@BSMTCLCURVE_EIRFT@@,Coil:Cooling:DX:SingleSpeed,CorridorsDXcool_dict,Energy_Input_Ratio_Function_of_Temperature_Curve_Name,
+Bsmt cooling efficiency curves,@@BSMTCLCURVE_EIRFFF@@,Coil:Cooling:DX:SingleSpeed,CorridorsDXcool_dict,Energy_Input_Ratio_Function_of_Flow_Fraction_Curve_Name,
+Bsmt cooling efficiency curves,@@BSMTCLCURVE_PLFFPLR@@,Coil:Cooling:DX:SingleSpeed,CorridorsDXcool_dict,Part_Load_Fraction_Correlation_Curve_Name,
+In-unit heating efficiency (COP),@@UNITHTCOP@@,Coil:Heating:DX:SingleSpeed,UnitDXheat_dict,Gross_Rated_Heating_COP,idfs
+In-unit heating efficiency curves,@@UNITHTCURVE_CAPFT@@,Coil:Heating:DX:SingleSpeed,UnitDXheat_dict,Heating_Capacity_Function_of_Temperature_Curve_Name,idfs
+In-unit heating efficiency curves,@@UNITHTCURVE_CAPFFF@@,Coil:Heating:DX:SingleSpeed,UnitDXheat_dict,Heating_Capacity_Function_of_Flow_Fraction_Curve_Name,
+In-unit heating efficiency curves,@@UNITHTCURVE_EIRFT@@,Coil:Heating:DX:SingleSpeed,UnitDXheat_dict,Energy_Input_Ratio_Function_of_Temperature_Curve_Name,
+In-unit heating efficiency curves,@@UNITHTCURVE_EIRFFF@@,Coil:Heating:DX:SingleSpeed,UnitDXheat_dict,Energy_Input_Ratio_Function_of_Flow_Fraction_Curve_Name,
+In-unit heating efficiency curves,@@UNITHTCURVE_PLFFPLR@@,Coil:Heating:DX:SingleSpeed,UnitDXheat_dict,Part_Load_Fraction_Correlation_Curve_Name,
+In-unit heating efficiency curves,@@UNITHTCURVE_DEFROST@@,Coil:Heating:DX:SingleSpeed,UnitDXheat_dict,Defrost_Energy_Input_Ratio_Function_of_Temperature_Curve_Name,
+In-unit cooling efficiency (COP),@@UNITCLCOP@@,Coil:Cooling:DX:SingleSpeed,UnitDXcool_dict,Gross_Rated_Cooling_COP,idfs
+In-unit cooling efficiency curves,@@UNITCLCURVE_CAPFT@@,Coil:Cooling:DX:SingleSpeed,UnitDXcool_dict,Total_Cooling_Capacity_Function_of_Temperature_Curve_Name,idfs
+In-unit cooling efficiency curves,@@UNITCLCURVE_CAPFFF@@,Coil:Cooling:DX:SingleSpeed,UnitDXcool_dict,Total_Cooling_Capacity_Function_of_Flow_Fraction_Curve_Name,
+In-unit cooling efficiency curves,@@UNITCLCURVE_EIRFT@@,Coil:Cooling:DX:SingleSpeed,UnitDXcool_dict,Energy_Input_Ratio_Function_of_Temperature_Curve_Name,
+In-unit cooling efficiency curves,@@UNITCLCURVE_EIRFFF@@,Coil:Cooling:DX:SingleSpeed,UnitDXcool_dict,Energy_Input_Ratio_Function_of_Flow_Fraction_Curve_Name,
+In-unit cooling efficiency curves,@@UNITCLCURVE_PLFFPLR@@,Coil:Cooling:DX:SingleSpeed,UnitDXcool_dict,Part_Load_Fraction_Correlation_Curve_Name,
+Distribution Load (W/unit),@@OFFCOEF@@,WaterHeater:Mixed,WaterHeaters_dict,Off_Cycle_Loss_Coefficient_to_Ambient_Temperature,idfs
+Distribution Load (W/unit),@@ONCOEF@@,WaterHeater:Mixed,WaterHeaters_dict,On_Cycle_Loss_Coefficient_to_Ambient_Temperature,
+In-unit DHW efficiency,@@DHWCOP@@,WaterHeater:Mixed,WaterHeaters_dict,Heater_Thermal_Efficiency,idfs
+LPD - corridor (W/sf),@@LPDCOR@@,Lights,CorridorLights_dict,Watts_per_Zone_Floor_Area,common
+In-unit LPD (W/sf),@@UNITLPD@@,Lights,UnitLights_dict,Watts_per_Zone_Floor_Area,idfs
