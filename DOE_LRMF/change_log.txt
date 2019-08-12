@@ -10,17 +10,17 @@ Change Material ceil_consol_layer Conductivity to @@CEILINGU@@ for idfs
 	Change Material ceil_consol_layer Conductivity to @@CEILINGU@@ for commonBsmt
 	Change Material ceil_consol_layer Conductivity to @@CEILINGU@@ for gardenSlab
 	Change Material ceil_consol_layer Conductivity to @@CEILINGU@@ for gardenBsmt
-Change Material floor_consol_layer Conductivity to @@FNDNU@@ for idfs
-	Change Material floor_consol_layer Conductivity to @@FNDNU@@ for commonSlab
-	Change Material floor_consol_layer Conductivity to @@FNDNU@@ for commonBsmt
-	Change Material floor_consol_layer Conductivity to @@FNDNU@@ for gardenSlab
-	Change Material floor_consol_layer Conductivity to @@FNDNU@@ for gardenBsmt
+Change Material slab_consol_layer Conductivity to @@SLABU@@ for idfs
+	Change Material slab_consol_layer Conductivity to @@SLABU@@ for commonSlab
+	Change Material slab_consol_layer Conductivity to @@SLABU@@ for commonBsmt
+	Change Material slab_consol_layer Conductivity to @@SLABU@@ for gardenSlab
+	Change Material slab_consol_layer Conductivity to @@SLABU@@ for gardenBsmt
 Change Material bsmtwall_consol_layer Conductivity to @@BSMTWU@@ for bsmt
 	Change Material bsmtwall_consol_layer Conductivity to @@BSMTWU@@ for commonBsmt
 	Change Material bsmtwall_consol_layer Conductivity to @@BSMTWU@@ for gardenBsmt
-Change Material exposed_floor_consol_layer Conductivity to @@BSMTWU@@ for bsmt
-	Change Material exposed_floor_consol_layer Conductivity to @@BSMTWU@@ for commonBsmt
-	Change Material exposed_floor_consol_layer Conductivity to @@BSMTWU@@ for gardenBsmt
+Change Material floor_consol_layer Conductivity to @@FLOORU@@ for bsmt
+	Change Material floor_consol_layer Conductivity to @@FLOORU@@ for commonBsmt
+	Change Material floor_consol_layer Conductivity to @@FLOORU@@ for gardenBsmt
 Change WindowMaterial:SimpleGlazingSystem Glass UFactor to @@WINU@@ for idfs
 	Change WindowMaterial:SimpleGlazingSystem Glass UFactor to @@WINU@@ for commonSlab
 	Change WindowMaterial:SimpleGlazingSystem Glass UFactor to @@WINU@@ for commonBsmt
@@ -226,62 +226,38 @@ Change Coil:Heating:DX:SingleSpeed BsmtDXheat_dict Defrost_Energy_Input_Ratio_Fu
 		Change Coil:Heating:DX:SingleSpeed Main DX Heating Coil_unitheatedbsmt Defrost_Energy_Input_Ratio_Function_of_Temperature_Curve_Name to @@BSMTHTCURVE_DEFROST@@ for commonBsmt
 	Change Coil:Heating:DX:SingleSpeed Main DX Heating Coil_unitheatedbsmt Defrost_Energy_Input_Ratio_Function_of_Temperature_Curve_Name to @@BSMTHTCURVE_DEFROST@@ for gardenBsmt
 		Change Coil:Heating:DX:SingleSpeed Main DX Heating Coil_unitheatedbsmt Defrost_Energy_Input_Ratio_Function_of_Temperature_Curve_Name to @@BSMTHTCURVE_DEFROST@@ for gardenBsmt
-Change Coil:Cooling:DX:SingleSpeed CorridorsDXcool_dict Gross_Rated_Cooling_COP to @@BSMTCLCOP@@ for bsmt
-	Change Coil:Cooling:DX:SingleSpeed Main DX Heating Coil_unitheatedbsmt Gross_Rated_Cooling_COP to @@BSMTCLCOP@@ for commonSlab
-		Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_G Corridor Gross_Rated_Cooling_COP to @@BSMTCLCOP@@ for commonSlab
-		Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_M Corridor Gross_Rated_Cooling_COP to @@BSMTCLCOP@@ for commonSlab
-		Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_T Corridor Gross_Rated_Cooling_COP to @@BSMTCLCOP@@ for commonSlab
-	Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_T Corridor Gross_Rated_Cooling_COP to @@BSMTCLCOP@@ for commonBsmt
-		Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_G Corridor Gross_Rated_Cooling_COP to @@BSMTCLCOP@@ for commonBsmt
-		Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_M Corridor Gross_Rated_Cooling_COP to @@BSMTCLCOP@@ for commonBsmt
-		Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_T Corridor Gross_Rated_Cooling_COP to @@BSMTCLCOP@@ for commonBsmt
-Change Coil:Cooling:DX:SingleSpeed CorridorsDXcool_dict Total_Cooling_Capacity_Function_of_Temperature_Curve_Name to @@BSMTCLCURVE_CAPFT@@ for bsmt
-	Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_T Corridor Total_Cooling_Capacity_Function_of_Temperature_Curve_Name to @@BSMTCLCURVE_CAPFT@@ for commonSlab
-		Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_G Corridor Total_Cooling_Capacity_Function_of_Temperature_Curve_Name to @@BSMTCLCURVE_CAPFT@@ for commonSlab
-		Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_M Corridor Total_Cooling_Capacity_Function_of_Temperature_Curve_Name to @@BSMTCLCURVE_CAPFT@@ for commonSlab
-		Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_T Corridor Total_Cooling_Capacity_Function_of_Temperature_Curve_Name to @@BSMTCLCURVE_CAPFT@@ for commonSlab
-	Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_T Corridor Total_Cooling_Capacity_Function_of_Temperature_Curve_Name to @@BSMTCLCURVE_CAPFT@@ for commonBsmt
-		Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_G Corridor Total_Cooling_Capacity_Function_of_Temperature_Curve_Name to @@BSMTCLCURVE_CAPFT@@ for commonBsmt
-		Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_M Corridor Total_Cooling_Capacity_Function_of_Temperature_Curve_Name to @@BSMTCLCURVE_CAPFT@@ for commonBsmt
-		Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_T Corridor Total_Cooling_Capacity_Function_of_Temperature_Curve_Name to @@BSMTCLCURVE_CAPFT@@ for commonBsmt
-Change Coil:Cooling:DX:SingleSpeed CorridorsDXcool_dict Total_Cooling_Capacity_Function_of_Flow_Fraction_Curve_Name to @@BSMTCLCURVE_CAPFFF@@ for bsmt
-	Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_T Corridor Total_Cooling_Capacity_Function_of_Flow_Fraction_Curve_Name to @@BSMTCLCURVE_CAPFFF@@ for commonSlab
-		Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_G Corridor Total_Cooling_Capacity_Function_of_Flow_Fraction_Curve_Name to @@BSMTCLCURVE_CAPFFF@@ for commonSlab
-		Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_M Corridor Total_Cooling_Capacity_Function_of_Flow_Fraction_Curve_Name to @@BSMTCLCURVE_CAPFFF@@ for commonSlab
-		Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_T Corridor Total_Cooling_Capacity_Function_of_Flow_Fraction_Curve_Name to @@BSMTCLCURVE_CAPFFF@@ for commonSlab
-	Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_T Corridor Total_Cooling_Capacity_Function_of_Flow_Fraction_Curve_Name to @@BSMTCLCURVE_CAPFFF@@ for commonBsmt
-		Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_G Corridor Total_Cooling_Capacity_Function_of_Flow_Fraction_Curve_Name to @@BSMTCLCURVE_CAPFFF@@ for commonBsmt
-		Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_M Corridor Total_Cooling_Capacity_Function_of_Flow_Fraction_Curve_Name to @@BSMTCLCURVE_CAPFFF@@ for commonBsmt
-		Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_T Corridor Total_Cooling_Capacity_Function_of_Flow_Fraction_Curve_Name to @@BSMTCLCURVE_CAPFFF@@ for commonBsmt
-Change Coil:Cooling:DX:SingleSpeed CorridorsDXcool_dict Energy_Input_Ratio_Function_of_Temperature_Curve_Name to @@BSMTCLCURVE_EIRFT@@ for bsmt
-	Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_T Corridor Energy_Input_Ratio_Function_of_Temperature_Curve_Name to @@BSMTCLCURVE_EIRFT@@ for commonSlab
-		Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_G Corridor Energy_Input_Ratio_Function_of_Temperature_Curve_Name to @@BSMTCLCURVE_EIRFT@@ for commonSlab
-		Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_M Corridor Energy_Input_Ratio_Function_of_Temperature_Curve_Name to @@BSMTCLCURVE_EIRFT@@ for commonSlab
-		Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_T Corridor Energy_Input_Ratio_Function_of_Temperature_Curve_Name to @@BSMTCLCURVE_EIRFT@@ for commonSlab
-	Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_T Corridor Energy_Input_Ratio_Function_of_Temperature_Curve_Name to @@BSMTCLCURVE_EIRFT@@ for commonBsmt
-		Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_G Corridor Energy_Input_Ratio_Function_of_Temperature_Curve_Name to @@BSMTCLCURVE_EIRFT@@ for commonBsmt
-		Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_M Corridor Energy_Input_Ratio_Function_of_Temperature_Curve_Name to @@BSMTCLCURVE_EIRFT@@ for commonBsmt
-		Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_T Corridor Energy_Input_Ratio_Function_of_Temperature_Curve_Name to @@BSMTCLCURVE_EIRFT@@ for commonBsmt
-Change Coil:Cooling:DX:SingleSpeed CorridorsDXcool_dict Energy_Input_Ratio_Function_of_Flow_Fraction_Curve_Name to @@BSMTCLCURVE_EIRFFF@@ for bsmt
-	Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_T Corridor Energy_Input_Ratio_Function_of_Flow_Fraction_Curve_Name to @@BSMTCLCURVE_EIRFFF@@ for commonSlab
-		Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_G Corridor Energy_Input_Ratio_Function_of_Flow_Fraction_Curve_Name to @@BSMTCLCURVE_EIRFFF@@ for commonSlab
-		Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_M Corridor Energy_Input_Ratio_Function_of_Flow_Fraction_Curve_Name to @@BSMTCLCURVE_EIRFFF@@ for commonSlab
-		Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_T Corridor Energy_Input_Ratio_Function_of_Flow_Fraction_Curve_Name to @@BSMTCLCURVE_EIRFFF@@ for commonSlab
-	Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_T Corridor Energy_Input_Ratio_Function_of_Flow_Fraction_Curve_Name to @@BSMTCLCURVE_EIRFFF@@ for commonBsmt
-		Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_G Corridor Energy_Input_Ratio_Function_of_Flow_Fraction_Curve_Name to @@BSMTCLCURVE_EIRFFF@@ for commonBsmt
-		Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_M Corridor Energy_Input_Ratio_Function_of_Flow_Fraction_Curve_Name to @@BSMTCLCURVE_EIRFFF@@ for commonBsmt
-		Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_T Corridor Energy_Input_Ratio_Function_of_Flow_Fraction_Curve_Name to @@BSMTCLCURVE_EIRFFF@@ for commonBsmt
-Change Coil:Cooling:DX:SingleSpeed CorridorsDXcool_dict Part_Load_Fraction_Correlation_Curve_Name to @@BSMTCLCURVE_PLFFPLR@@ for bsmt
-	Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_T Corridor Part_Load_Fraction_Correlation_Curve_Name to @@BSMTCLCURVE_PLFFPLR@@ for commonSlab
-		Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_G Corridor Part_Load_Fraction_Correlation_Curve_Name to @@BSMTCLCURVE_PLFFPLR@@ for commonSlab
-		Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_M Corridor Part_Load_Fraction_Correlation_Curve_Name to @@BSMTCLCURVE_PLFFPLR@@ for commonSlab
-		Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_T Corridor Part_Load_Fraction_Correlation_Curve_Name to @@BSMTCLCURVE_PLFFPLR@@ for commonSlab
-	Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_T Corridor Part_Load_Fraction_Correlation_Curve_Name to @@BSMTCLCURVE_PLFFPLR@@ for commonBsmt
-		Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_G Corridor Part_Load_Fraction_Correlation_Curve_Name to @@BSMTCLCURVE_PLFFPLR@@ for commonBsmt
-		Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_M Corridor Part_Load_Fraction_Correlation_Curve_Name to @@BSMTCLCURVE_PLFFPLR@@ for commonBsmt
-		Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_T Corridor Part_Load_Fraction_Correlation_Curve_Name to @@BSMTCLCURVE_PLFFPLR@@ for commonBsmt
+Change Coil:Cooling:DX:SingleSpeed BsmtDXcool_dict Gross_Rated_Cooling_COP to @@BSMTCLCOP@@ for bsmt
+	Change Coil:Cooling:DX:SingleSpeed Main DX Heating Coil_unitheatedbsmt Gross_Rated_Cooling_COP to @@BSMTCLCOP@@ for commonBsmt
+		Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_unitheatedbsmt Gross_Rated_Cooling_COP to @@BSMTCLCOP@@ for commonBsmt
+	Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_unitheatedbsmt Gross_Rated_Cooling_COP to @@BSMTCLCOP@@ for gardenBsmt
+		Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_unitheatedbsmt Gross_Rated_Cooling_COP to @@BSMTCLCOP@@ for gardenBsmt
+Change Coil:Cooling:DX:SingleSpeed BsmtDXcool_dict Total_Cooling_Capacity_Function_of_Temperature_Curve_Name to @@BSMTCLCURVE_CAPFT@@ for bsmt
+	Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_unitheatedbsmt Total_Cooling_Capacity_Function_of_Temperature_Curve_Name to @@BSMTCLCURVE_CAPFT@@ for commonBsmt
+		Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_unitheatedbsmt Total_Cooling_Capacity_Function_of_Temperature_Curve_Name to @@BSMTCLCURVE_CAPFT@@ for commonBsmt
+	Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_unitheatedbsmt Total_Cooling_Capacity_Function_of_Temperature_Curve_Name to @@BSMTCLCURVE_CAPFT@@ for gardenBsmt
+		Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_unitheatedbsmt Total_Cooling_Capacity_Function_of_Temperature_Curve_Name to @@BSMTCLCURVE_CAPFT@@ for gardenBsmt
+Change Coil:Cooling:DX:SingleSpeed BsmtDXcool_dict Total_Cooling_Capacity_Function_of_Flow_Fraction_Curve_Name to @@BSMTCLCURVE_CAPFFF@@ for bsmt
+	Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_unitheatedbsmt Total_Cooling_Capacity_Function_of_Flow_Fraction_Curve_Name to @@BSMTCLCURVE_CAPFFF@@ for commonBsmt
+		Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_unitheatedbsmt Total_Cooling_Capacity_Function_of_Flow_Fraction_Curve_Name to @@BSMTCLCURVE_CAPFFF@@ for commonBsmt
+	Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_unitheatedbsmt Total_Cooling_Capacity_Function_of_Flow_Fraction_Curve_Name to @@BSMTCLCURVE_CAPFFF@@ for gardenBsmt
+		Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_unitheatedbsmt Total_Cooling_Capacity_Function_of_Flow_Fraction_Curve_Name to @@BSMTCLCURVE_CAPFFF@@ for gardenBsmt
+Change Coil:Cooling:DX:SingleSpeed BsmtDXcool_dict Energy_Input_Ratio_Function_of_Temperature_Curve_Name to @@BSMTCLCURVE_EIRFT@@ for bsmt
+	Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_unitheatedbsmt Energy_Input_Ratio_Function_of_Temperature_Curve_Name to @@BSMTCLCURVE_EIRFT@@ for commonBsmt
+		Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_unitheatedbsmt Energy_Input_Ratio_Function_of_Temperature_Curve_Name to @@BSMTCLCURVE_EIRFT@@ for commonBsmt
+	Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_unitheatedbsmt Energy_Input_Ratio_Function_of_Temperature_Curve_Name to @@BSMTCLCURVE_EIRFT@@ for gardenBsmt
+		Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_unitheatedbsmt Energy_Input_Ratio_Function_of_Temperature_Curve_Name to @@BSMTCLCURVE_EIRFT@@ for gardenBsmt
+Change Coil:Cooling:DX:SingleSpeed BsmtDXcool_dict Energy_Input_Ratio_Function_of_Flow_Fraction_Curve_Name to @@BSMTCLCURVE_EIRFFF@@ for bsmt
+	Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_unitheatedbsmt Energy_Input_Ratio_Function_of_Flow_Fraction_Curve_Name to @@BSMTCLCURVE_EIRFFF@@ for commonBsmt
+		Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_unitheatedbsmt Energy_Input_Ratio_Function_of_Flow_Fraction_Curve_Name to @@BSMTCLCURVE_EIRFFF@@ for commonBsmt
+	Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_unitheatedbsmt Energy_Input_Ratio_Function_of_Flow_Fraction_Curve_Name to @@BSMTCLCURVE_EIRFFF@@ for gardenBsmt
+		Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_unitheatedbsmt Energy_Input_Ratio_Function_of_Flow_Fraction_Curve_Name to @@BSMTCLCURVE_EIRFFF@@ for gardenBsmt
+Change Coil:Cooling:DX:SingleSpeed BsmtDXcool_dict Part_Load_Fraction_Correlation_Curve_Name to @@BSMTCLCURVE_PLFFPLR@@ for bsmt
+	Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_unitheatedbsmt Part_Load_Fraction_Correlation_Curve_Name to @@BSMTCLCURVE_PLFFPLR@@ for commonBsmt
+		Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_unitheatedbsmt Part_Load_Fraction_Correlation_Curve_Name to @@BSMTCLCURVE_PLFFPLR@@ for commonBsmt
+	Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_unitheatedbsmt Part_Load_Fraction_Correlation_Curve_Name to @@BSMTCLCURVE_PLFFPLR@@ for gardenBsmt
+		Change Coil:Cooling:DX:SingleSpeed DX Cooling Coil_unitheatedbsmt Part_Load_Fraction_Correlation_Curve_Name to @@BSMTCLCURVE_PLFFPLR@@ for gardenBsmt
 Change Coil:Heating:DX:SingleSpeed UnitDXheat_dict Gross_Rated_Heating_COP to @@UNITHTCOP@@ for idfs
-	Change Coil:Heating:DX:SingleSpeed DX Cooling Coil_T Corridor Gross_Rated_Heating_COP to @@UNITHTCOP@@ for commonSlab
+	Change Coil:Heating:DX:SingleSpeed DX Cooling Coil_unitheatedbsmt Gross_Rated_Heating_COP to @@UNITHTCOP@@ for commonSlab
 		Change Coil:Heating:DX:SingleSpeed Main DX Heating Coil_unit1_BackRow_BottomFloor Gross_Rated_Heating_COP to @@UNITHTCOP@@ for commonSlab
 		Change Coil:Heating:DX:SingleSpeed Main DX Heating Coil_unit2_BackRow_BottomFloor Gross_Rated_Heating_COP to @@UNITHTCOP@@ for commonSlab
 		Change Coil:Heating:DX:SingleSpeed Main DX Heating Coil_unit3_BackRow_BottomFloor Gross_Rated_Heating_COP to @@UNITHTCOP@@ for commonSlab

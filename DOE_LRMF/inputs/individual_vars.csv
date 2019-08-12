@@ -1,9 +1,9 @@
 Description,jEplus - Variable,Object Type,Name,Value,Models
 Exterior wall U-value,@@WALLU@@,Material,wall_consol_layer,Conductivity,idfs
 Ceiling U-value,@@CEILINGU@@,Material,ceil_consol_layer,Conductivity,idfs
-Slab U-value,@@FNDNU@@,Material,floor_consol_layer,Conductivity,idfs
+Slab U-value,@@SLABU@@,Material,slab_consol_layer,Conductivity,idfs
 bsmt wall U-value,@@BSMTWU@@,Material,bsmtwall_consol_layer,Conductivity,bsmt
-Floor U-value,@@BSMTWU@@,Material,exposed_floor_consol_layer,Conductivity,bsmt
+Floor U-value,@@FLOORU@@,Material,floor_consol_layer,Conductivity,bsmt
 Windows U-value,@@WINU@@,WindowMaterial:SimpleGlazingSystem,Glass,UFactor,idfs
 Windows SHGC,@@SHGC@@,WindowMaterial:SimpleGlazingSystem,Glass,Solar_Heat_Gain_Coefficient,idfs
 Lighting Stairwell (W),@@LTGSTR@@,Exterior:Lights,stairLights,Design_Level,idfs
@@ -16,3 +16,7 @@ Corridor heating setpoint temp (F),@@CORHTST@@,Schedule:Compact,heating_sch_corr
 Corridor cooling setpoint temp (F),@@CORCLST@@,Schedule:Compact,cooling_sch_corr,Field_4,common
 bsmt heating setpoint temp (F),@@BSMTHTST@@,Schedule:Compact,heating_sch_bsmt,Field_4,bsmt
 bsmt cooling setpoint temp (F),@@BSMTCLST@@,Schedule:Compact,cooling_sch_bsmt,Field_4,bsmt
+,,,,,
+,,,,,
+,,,,,
+,,,61,,
