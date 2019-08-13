@@ -1,4 +1,5 @@
 Description,jEplus - Variable,Object Type,Name,Value,Models
+ModifyName to Identify building,@@NAME@@,Building,BuildingName_dict,Name,idfs
 Corridor heating efficiency (COP),@@CORHTCOP@@,Coil:Heating:DX:SingleSpeed,CorridorsDXheat_dict,Gross_Rated_Heating_COP,common
 Corridor heating efficiency curves,@@CORHTCURVE_CAPFT@@,Coil:Heating:DX:SingleSpeed,CorridorsDXheat_dict,Heating_Capacity_Function_of_Temperature_Curve_Name,common
 Corridor heating efficiency curves,@@CORHTCURVE_CAPFFF@@,Coil:Heating:DX:SingleSpeed,CorridorsDXheat_dict,Heating_Capacity_Function_of_Flow_Fraction_Curve_Name,common
@@ -43,3 +44,9 @@ Distribution Load (W/unit),@@ONCOEF@@,WaterHeater:Mixed,WaterHeaters_dict,On_Cyc
 In-unit DHW efficiency,@@DHWCOP@@,WaterHeater:Mixed,WaterHeaters_dict,Heater_Thermal_Efficiency,idfs
 LPD - corridor (W/sf),@@LPDCOR@@,Lights,CorridorLights_dict,Watts_per_Zone_Floor_Area,common
 In-unit LPD (W/sf),@@UNITLPD@@,Lights,UnitLights_dict,Watts_per_Zone_Floor_Area,idfs
+Ventilation flowrate Corridor,@@FLOWCORR@@,ZoneVentilation:DesignFlowRate,CorridorVent_dict,Design_Flow_Rate,common
+Ventilation flowrate Basement,@@FLOWBSMT@@,ZoneVentilation:DesignFlowRate,BsmtVent_dict,Design_Flow_Rate,bsmt
+Ventilation flowrate Unit,@@FLOWUNIT@@,ZoneVentilation:DesignFlowRate,UnitVent_dict,Design_Flow_Rate,idfs
+Ventilation SP Corridor,@@SPCORR@@,ZoneVentilation:DesignFlowRate,CorridorVent_dict,Fan_Pressure_Rise,common
+Ventilation SP Basement,@@SPBSMT@@,ZoneVentilation:DesignFlowRate,BsmtVent_dict,Fan_Pressure_Rise,bsmt
+Ventilation SP Unit,@@SPUNIT@@,ZoneVentilation:DesignFlowRate,UnitVent_dict,Fan_Pressure_Rise,idfs

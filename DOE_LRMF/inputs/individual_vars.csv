@@ -16,7 +16,3 @@ Corridor heating setpoint temp (F),@@CORHTST@@,Schedule:Compact,heating_sch_corr
 Corridor cooling setpoint temp (F),@@CORCLST@@,Schedule:Compact,cooling_sch_corr,Field_4,common
 bsmt heating setpoint temp (F),@@BSMTHTST@@,Schedule:Compact,heating_sch_bsmt,Field_4,bsmt
 bsmt cooling setpoint temp (F),@@BSMTCLST@@,Schedule:Compact,cooling_sch_bsmt,Field_4,bsmt
-,,,,,
-,,,,,
-,,,,,
-,,,61,,

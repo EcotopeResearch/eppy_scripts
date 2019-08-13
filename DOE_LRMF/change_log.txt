@@ -74,8 +74,17 @@ Change Schedule:Compact cooling_sch_bsmt Field_4 to @@BSMTCLST@@ for bsmt
 
 #### UPDATES FOR DICTIONARY OBJECTS ####
 
+Change Building BuildingName_dict Name to @@NAME@@ for idfs
+	Change Building cooling_sch_bsmt Name to @@NAME@@ for commonSlab
+		Change Building MF_Washington_Seattle-Tacoma.Intl.AP.727930_hp_slab_IECC_2012 Name to @@NAME@@ for commonSlab
+	Change Building MF_Washington_Seattle-Tacoma.Intl.AP.727930_hp_slab_IECC_2012 Name to @@NAME@@ for commonBsmt
+		Change Building hp_heatedbsmt_IECC_2012_SEED Name to @@NAME@@ for commonBsmt
+	Change Building hp_heatedbsmt_IECC_2012_SEED Name to @@NAME@@ for gardenSlab
+		Change Building MF_Washington_Seattle-Tacoma.Intl.AP.727930_hp_slab_IECC_2012 Name to @@NAME@@ for gardenSlab
+	Change Building MF_Washington_Seattle-Tacoma.Intl.AP.727930_hp_slab_IECC_2012 Name to @@NAME@@ for gardenBsmt
+		Change Building MF_Washington_Seattle-Tacoma.Intl.AP.727930_hp_heatedbsmt_IECC_2012 Name to @@NAME@@ for gardenBsmt
 Change Coil:Heating:DX:SingleSpeed CorridorsDXheat_dict Gross_Rated_Heating_COP to @@CORHTCOP@@ for common
-	Change Coil:Heating:DX:SingleSpeed cooling_sch_bsmt Gross_Rated_Heating_COP to @@CORHTCOP@@ for commonSlab
+	Change Coil:Heating:DX:SingleSpeed MF_Washington_Seattle-Tacoma.Intl.AP.727930_hp_heatedbsmt_IECC_2012 Gross_Rated_Heating_COP to @@CORHTCOP@@ for commonSlab
 		Change Coil:Heating:DX:SingleSpeed Main DX Heating Coil_G Corridor Gross_Rated_Heating_COP to @@CORHTCOP@@ for commonSlab
 		Change Coil:Heating:DX:SingleSpeed Main DX Heating Coil_M Corridor Gross_Rated_Heating_COP to @@CORHTCOP@@ for commonSlab
 		Change Coil:Heating:DX:SingleSpeed Main DX Heating Coil_T Corridor Gross_Rated_Heating_COP to @@CORHTCOP@@ for commonSlab
@@ -1646,3 +1655,185 @@ Change Lights UnitLights_dict Watts_per_Zone_Floor_Area to @@UNITLPD@@ for idfs
 		Change Lights Living Plug-in Lighting2_FrontRow_TopFloor Watts_per_Zone_Floor_Area to @@UNITLPD@@ for gardenBsmt
 		Change Lights Living Hardwired Lighting3_FrontRow_TopFloor Watts_per_Zone_Floor_Area to @@UNITLPD@@ for gardenBsmt
 		Change Lights Living Plug-in Lighting3_FrontRow_TopFloor Watts_per_Zone_Floor_Area to @@UNITLPD@@ for gardenBsmt
+Change ZoneVentilation:DesignFlowRate CorridorVent_dict Design_Flow_Rate to @@FLOWCORR@@ for common
+	Change ZoneVentilation:DesignFlowRate Living Plug-in Lighting3_FrontRow_TopFloor Design_Flow_Rate to @@FLOWCORR@@ for commonSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_G Corridor Design_Flow_Rate to @@FLOWCORR@@ for commonSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_M Corridor Design_Flow_Rate to @@FLOWCORR@@ for commonSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_T Corridor Design_Flow_Rate to @@FLOWCORR@@ for commonSlab
+	Change ZoneVentilation:DesignFlowRate Ventilation_T Corridor Design_Flow_Rate to @@FLOWCORR@@ for commonBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_G Corridor Design_Flow_Rate to @@FLOWCORR@@ for commonBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_M Corridor Design_Flow_Rate to @@FLOWCORR@@ for commonBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_T Corridor Design_Flow_Rate to @@FLOWCORR@@ for commonBsmt
+Change ZoneVentilation:DesignFlowRate BsmtVent_dict Design_Flow_Rate to @@FLOWBSMT@@ for bsmt
+	Change ZoneVentilation:DesignFlowRate Ventilation_T Corridor Design_Flow_Rate to @@FLOWBSMT@@ for commonBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unitheatedbsmt Design_Flow_Rate to @@FLOWBSMT@@ for commonBsmt
+	Change ZoneVentilation:DesignFlowRate Ventilation_unitheatedbsmt Design_Flow_Rate to @@FLOWBSMT@@ for gardenBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unitheatedbsmt Design_Flow_Rate to @@FLOWBSMT@@ for gardenBsmt
+Change ZoneVentilation:DesignFlowRate UnitVent_dict Design_Flow_Rate to @@FLOWUNIT@@ for idfs
+	Change ZoneVentilation:DesignFlowRate Ventilation_unitheatedbsmt Design_Flow_Rate to @@FLOWUNIT@@ for commonSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit1_BackRow_BottomFloor Design_Flow_Rate to @@FLOWUNIT@@ for commonSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit2_BackRow_BottomFloor Design_Flow_Rate to @@FLOWUNIT@@ for commonSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit3_BackRow_BottomFloor Design_Flow_Rate to @@FLOWUNIT@@ for commonSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit1_BackRow_MiddleFloor Design_Flow_Rate to @@FLOWUNIT@@ for commonSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit2_BackRow_MiddleFloor Design_Flow_Rate to @@FLOWUNIT@@ for commonSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit3_BackRow_MiddleFloor Design_Flow_Rate to @@FLOWUNIT@@ for commonSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit1_BackRow_TopFloor Design_Flow_Rate to @@FLOWUNIT@@ for commonSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit2_BackRow_TopFloor Design_Flow_Rate to @@FLOWUNIT@@ for commonSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit3_BackRow_TopFloor Design_Flow_Rate to @@FLOWUNIT@@ for commonSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit1_FrontRow_BottomFloor Design_Flow_Rate to @@FLOWUNIT@@ for commonSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit2_FrontRow_BottomFloor Design_Flow_Rate to @@FLOWUNIT@@ for commonSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit3_FrontRow_BottomFloor Design_Flow_Rate to @@FLOWUNIT@@ for commonSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit1_FrontRow_MiddleFloor Design_Flow_Rate to @@FLOWUNIT@@ for commonSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit2_FrontRow_MiddleFloor Design_Flow_Rate to @@FLOWUNIT@@ for commonSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit3_FrontRow_MiddleFloor Design_Flow_Rate to @@FLOWUNIT@@ for commonSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit1_FrontRow_TopFloor Design_Flow_Rate to @@FLOWUNIT@@ for commonSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit2_FrontRow_TopFloor Design_Flow_Rate to @@FLOWUNIT@@ for commonSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit3_FrontRow_TopFloor Design_Flow_Rate to @@FLOWUNIT@@ for commonSlab
+	Change ZoneVentilation:DesignFlowRate Ventilation_unit3_FrontRow_TopFloor Design_Flow_Rate to @@FLOWUNIT@@ for commonBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit1_BackRow_BottomFloor Design_Flow_Rate to @@FLOWUNIT@@ for commonBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit2_BackRow_BottomFloor Design_Flow_Rate to @@FLOWUNIT@@ for commonBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit3_BackRow_BottomFloor Design_Flow_Rate to @@FLOWUNIT@@ for commonBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit1_BackRow_MiddleFloor Design_Flow_Rate to @@FLOWUNIT@@ for commonBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit2_BackRow_MiddleFloor Design_Flow_Rate to @@FLOWUNIT@@ for commonBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit3_BackRow_MiddleFloor Design_Flow_Rate to @@FLOWUNIT@@ for commonBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit1_BackRow_TopFloor Design_Flow_Rate to @@FLOWUNIT@@ for commonBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit2_BackRow_TopFloor Design_Flow_Rate to @@FLOWUNIT@@ for commonBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit3_BackRow_TopFloor Design_Flow_Rate to @@FLOWUNIT@@ for commonBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit1_FrontRow_BottomFloor Design_Flow_Rate to @@FLOWUNIT@@ for commonBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit2_FrontRow_BottomFloor Design_Flow_Rate to @@FLOWUNIT@@ for commonBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit3_FrontRow_BottomFloor Design_Flow_Rate to @@FLOWUNIT@@ for commonBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit1_FrontRow_MiddleFloor Design_Flow_Rate to @@FLOWUNIT@@ for commonBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit2_FrontRow_MiddleFloor Design_Flow_Rate to @@FLOWUNIT@@ for commonBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit3_FrontRow_MiddleFloor Design_Flow_Rate to @@FLOWUNIT@@ for commonBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit1_FrontRow_TopFloor Design_Flow_Rate to @@FLOWUNIT@@ for commonBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit2_FrontRow_TopFloor Design_Flow_Rate to @@FLOWUNIT@@ for commonBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit3_FrontRow_TopFloor Design_Flow_Rate to @@FLOWUNIT@@ for commonBsmt
+	Change ZoneVentilation:DesignFlowRate Ventilation_unit3_FrontRow_TopFloor Design_Flow_Rate to @@FLOWUNIT@@ for gardenSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit1_BackRow_BottomFloor Design_Flow_Rate to @@FLOWUNIT@@ for gardenSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit2_BackRow_BottomFloor Design_Flow_Rate to @@FLOWUNIT@@ for gardenSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit3_BackRow_BottomFloor Design_Flow_Rate to @@FLOWUNIT@@ for gardenSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit1_BackRow_MiddleFloor Design_Flow_Rate to @@FLOWUNIT@@ for gardenSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit2_BackRow_MiddleFloor Design_Flow_Rate to @@FLOWUNIT@@ for gardenSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit3_BackRow_MiddleFloor Design_Flow_Rate to @@FLOWUNIT@@ for gardenSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit1_BackRow_TopFloor Design_Flow_Rate to @@FLOWUNIT@@ for gardenSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit2_BackRow_TopFloor Design_Flow_Rate to @@FLOWUNIT@@ for gardenSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit3_BackRow_TopFloor Design_Flow_Rate to @@FLOWUNIT@@ for gardenSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit1_FrontRow_BottomFloor Design_Flow_Rate to @@FLOWUNIT@@ for gardenSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit2_FrontRow_BottomFloor Design_Flow_Rate to @@FLOWUNIT@@ for gardenSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit3_FrontRow_BottomFloor Design_Flow_Rate to @@FLOWUNIT@@ for gardenSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit1_FrontRow_MiddleFloor Design_Flow_Rate to @@FLOWUNIT@@ for gardenSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit2_FrontRow_MiddleFloor Design_Flow_Rate to @@FLOWUNIT@@ for gardenSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit3_FrontRow_MiddleFloor Design_Flow_Rate to @@FLOWUNIT@@ for gardenSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit1_FrontRow_TopFloor Design_Flow_Rate to @@FLOWUNIT@@ for gardenSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit2_FrontRow_TopFloor Design_Flow_Rate to @@FLOWUNIT@@ for gardenSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit3_FrontRow_TopFloor Design_Flow_Rate to @@FLOWUNIT@@ for gardenSlab
+	Change ZoneVentilation:DesignFlowRate Ventilation_unit3_FrontRow_TopFloor Design_Flow_Rate to @@FLOWUNIT@@ for gardenBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit1_BackRow_BottomFloor Design_Flow_Rate to @@FLOWUNIT@@ for gardenBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit2_BackRow_BottomFloor Design_Flow_Rate to @@FLOWUNIT@@ for gardenBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit3_BackRow_BottomFloor Design_Flow_Rate to @@FLOWUNIT@@ for gardenBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit1_BackRow_MiddleFloor Design_Flow_Rate to @@FLOWUNIT@@ for gardenBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit2_BackRow_MiddleFloor Design_Flow_Rate to @@FLOWUNIT@@ for gardenBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit3_BackRow_MiddleFloor Design_Flow_Rate to @@FLOWUNIT@@ for gardenBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit1_BackRow_TopFloor Design_Flow_Rate to @@FLOWUNIT@@ for gardenBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit2_BackRow_TopFloor Design_Flow_Rate to @@FLOWUNIT@@ for gardenBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit3_BackRow_TopFloor Design_Flow_Rate to @@FLOWUNIT@@ for gardenBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit1_FrontRow_BottomFloor Design_Flow_Rate to @@FLOWUNIT@@ for gardenBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit2_FrontRow_BottomFloor Design_Flow_Rate to @@FLOWUNIT@@ for gardenBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit3_FrontRow_BottomFloor Design_Flow_Rate to @@FLOWUNIT@@ for gardenBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit1_FrontRow_MiddleFloor Design_Flow_Rate to @@FLOWUNIT@@ for gardenBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit2_FrontRow_MiddleFloor Design_Flow_Rate to @@FLOWUNIT@@ for gardenBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit3_FrontRow_MiddleFloor Design_Flow_Rate to @@FLOWUNIT@@ for gardenBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit1_FrontRow_TopFloor Design_Flow_Rate to @@FLOWUNIT@@ for gardenBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit2_FrontRow_TopFloor Design_Flow_Rate to @@FLOWUNIT@@ for gardenBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit3_FrontRow_TopFloor Design_Flow_Rate to @@FLOWUNIT@@ for gardenBsmt
+Change ZoneVentilation:DesignFlowRate CorridorVent_dict Fan_Pressure_Rise to @@SPCORR@@ for common
+	Change ZoneVentilation:DesignFlowRate Ventilation_unit3_FrontRow_TopFloor Fan_Pressure_Rise to @@SPCORR@@ for commonSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_G Corridor Fan_Pressure_Rise to @@SPCORR@@ for commonSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_M Corridor Fan_Pressure_Rise to @@SPCORR@@ for commonSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_T Corridor Fan_Pressure_Rise to @@SPCORR@@ for commonSlab
+	Change ZoneVentilation:DesignFlowRate Ventilation_T Corridor Fan_Pressure_Rise to @@SPCORR@@ for commonBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_G Corridor Fan_Pressure_Rise to @@SPCORR@@ for commonBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_M Corridor Fan_Pressure_Rise to @@SPCORR@@ for commonBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_T Corridor Fan_Pressure_Rise to @@SPCORR@@ for commonBsmt
+Change ZoneVentilation:DesignFlowRate BsmtVent_dict Fan_Pressure_Rise to @@SPBSMT@@ for bsmt
+	Change ZoneVentilation:DesignFlowRate Ventilation_T Corridor Fan_Pressure_Rise to @@SPBSMT@@ for commonBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unitheatedbsmt Fan_Pressure_Rise to @@SPBSMT@@ for commonBsmt
+	Change ZoneVentilation:DesignFlowRate Ventilation_unitheatedbsmt Fan_Pressure_Rise to @@SPBSMT@@ for gardenBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unitheatedbsmt Fan_Pressure_Rise to @@SPBSMT@@ for gardenBsmt
+Change ZoneVentilation:DesignFlowRate UnitVent_dict Fan_Pressure_Rise to @@SPUNIT@@ for idfs
+	Change ZoneVentilation:DesignFlowRate Ventilation_unitheatedbsmt Fan_Pressure_Rise to @@SPUNIT@@ for commonSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit1_BackRow_BottomFloor Fan_Pressure_Rise to @@SPUNIT@@ for commonSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit2_BackRow_BottomFloor Fan_Pressure_Rise to @@SPUNIT@@ for commonSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit3_BackRow_BottomFloor Fan_Pressure_Rise to @@SPUNIT@@ for commonSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit1_BackRow_MiddleFloor Fan_Pressure_Rise to @@SPUNIT@@ for commonSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit2_BackRow_MiddleFloor Fan_Pressure_Rise to @@SPUNIT@@ for commonSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit3_BackRow_MiddleFloor Fan_Pressure_Rise to @@SPUNIT@@ for commonSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit1_BackRow_TopFloor Fan_Pressure_Rise to @@SPUNIT@@ for commonSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit2_BackRow_TopFloor Fan_Pressure_Rise to @@SPUNIT@@ for commonSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit3_BackRow_TopFloor Fan_Pressure_Rise to @@SPUNIT@@ for commonSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit1_FrontRow_BottomFloor Fan_Pressure_Rise to @@SPUNIT@@ for commonSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit2_FrontRow_BottomFloor Fan_Pressure_Rise to @@SPUNIT@@ for commonSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit3_FrontRow_BottomFloor Fan_Pressure_Rise to @@SPUNIT@@ for commonSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit1_FrontRow_MiddleFloor Fan_Pressure_Rise to @@SPUNIT@@ for commonSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit2_FrontRow_MiddleFloor Fan_Pressure_Rise to @@SPUNIT@@ for commonSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit3_FrontRow_MiddleFloor Fan_Pressure_Rise to @@SPUNIT@@ for commonSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit1_FrontRow_TopFloor Fan_Pressure_Rise to @@SPUNIT@@ for commonSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit2_FrontRow_TopFloor Fan_Pressure_Rise to @@SPUNIT@@ for commonSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit3_FrontRow_TopFloor Fan_Pressure_Rise to @@SPUNIT@@ for commonSlab
+	Change ZoneVentilation:DesignFlowRate Ventilation_unit3_FrontRow_TopFloor Fan_Pressure_Rise to @@SPUNIT@@ for commonBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit1_BackRow_BottomFloor Fan_Pressure_Rise to @@SPUNIT@@ for commonBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit2_BackRow_BottomFloor Fan_Pressure_Rise to @@SPUNIT@@ for commonBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit3_BackRow_BottomFloor Fan_Pressure_Rise to @@SPUNIT@@ for commonBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit1_BackRow_MiddleFloor Fan_Pressure_Rise to @@SPUNIT@@ for commonBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit2_BackRow_MiddleFloor Fan_Pressure_Rise to @@SPUNIT@@ for commonBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit3_BackRow_MiddleFloor Fan_Pressure_Rise to @@SPUNIT@@ for commonBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit1_BackRow_TopFloor Fan_Pressure_Rise to @@SPUNIT@@ for commonBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit2_BackRow_TopFloor Fan_Pressure_Rise to @@SPUNIT@@ for commonBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit3_BackRow_TopFloor Fan_Pressure_Rise to @@SPUNIT@@ for commonBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit1_FrontRow_BottomFloor Fan_Pressure_Rise to @@SPUNIT@@ for commonBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit2_FrontRow_BottomFloor Fan_Pressure_Rise to @@SPUNIT@@ for commonBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit3_FrontRow_BottomFloor Fan_Pressure_Rise to @@SPUNIT@@ for commonBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit1_FrontRow_MiddleFloor Fan_Pressure_Rise to @@SPUNIT@@ for commonBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit2_FrontRow_MiddleFloor Fan_Pressure_Rise to @@SPUNIT@@ for commonBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit3_FrontRow_MiddleFloor Fan_Pressure_Rise to @@SPUNIT@@ for commonBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit1_FrontRow_TopFloor Fan_Pressure_Rise to @@SPUNIT@@ for commonBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit2_FrontRow_TopFloor Fan_Pressure_Rise to @@SPUNIT@@ for commonBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit3_FrontRow_TopFloor Fan_Pressure_Rise to @@SPUNIT@@ for commonBsmt
+	Change ZoneVentilation:DesignFlowRate Ventilation_unit3_FrontRow_TopFloor Fan_Pressure_Rise to @@SPUNIT@@ for gardenSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit1_BackRow_BottomFloor Fan_Pressure_Rise to @@SPUNIT@@ for gardenSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit2_BackRow_BottomFloor Fan_Pressure_Rise to @@SPUNIT@@ for gardenSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit3_BackRow_BottomFloor Fan_Pressure_Rise to @@SPUNIT@@ for gardenSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit1_BackRow_MiddleFloor Fan_Pressure_Rise to @@SPUNIT@@ for gardenSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit2_BackRow_MiddleFloor Fan_Pressure_Rise to @@SPUNIT@@ for gardenSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit3_BackRow_MiddleFloor Fan_Pressure_Rise to @@SPUNIT@@ for gardenSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit1_BackRow_TopFloor Fan_Pressure_Rise to @@SPUNIT@@ for gardenSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit2_BackRow_TopFloor Fan_Pressure_Rise to @@SPUNIT@@ for gardenSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit3_BackRow_TopFloor Fan_Pressure_Rise to @@SPUNIT@@ for gardenSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit1_FrontRow_BottomFloor Fan_Pressure_Rise to @@SPUNIT@@ for gardenSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit2_FrontRow_BottomFloor Fan_Pressure_Rise to @@SPUNIT@@ for gardenSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit3_FrontRow_BottomFloor Fan_Pressure_Rise to @@SPUNIT@@ for gardenSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit1_FrontRow_MiddleFloor Fan_Pressure_Rise to @@SPUNIT@@ for gardenSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit2_FrontRow_MiddleFloor Fan_Pressure_Rise to @@SPUNIT@@ for gardenSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit3_FrontRow_MiddleFloor Fan_Pressure_Rise to @@SPUNIT@@ for gardenSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit1_FrontRow_TopFloor Fan_Pressure_Rise to @@SPUNIT@@ for gardenSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit2_FrontRow_TopFloor Fan_Pressure_Rise to @@SPUNIT@@ for gardenSlab
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit3_FrontRow_TopFloor Fan_Pressure_Rise to @@SPUNIT@@ for gardenSlab
+	Change ZoneVentilation:DesignFlowRate Ventilation_unit3_FrontRow_TopFloor Fan_Pressure_Rise to @@SPUNIT@@ for gardenBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit1_BackRow_BottomFloor Fan_Pressure_Rise to @@SPUNIT@@ for gardenBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit2_BackRow_BottomFloor Fan_Pressure_Rise to @@SPUNIT@@ for gardenBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit3_BackRow_BottomFloor Fan_Pressure_Rise to @@SPUNIT@@ for gardenBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit1_BackRow_MiddleFloor Fan_Pressure_Rise to @@SPUNIT@@ for gardenBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit2_BackRow_MiddleFloor Fan_Pressure_Rise to @@SPUNIT@@ for gardenBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit3_BackRow_MiddleFloor Fan_Pressure_Rise to @@SPUNIT@@ for gardenBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit1_BackRow_TopFloor Fan_Pressure_Rise to @@SPUNIT@@ for gardenBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit2_BackRow_TopFloor Fan_Pressure_Rise to @@SPUNIT@@ for gardenBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit3_BackRow_TopFloor Fan_Pressure_Rise to @@SPUNIT@@ for gardenBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit1_FrontRow_BottomFloor Fan_Pressure_Rise to @@SPUNIT@@ for gardenBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit2_FrontRow_BottomFloor Fan_Pressure_Rise to @@SPUNIT@@ for gardenBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit3_FrontRow_BottomFloor Fan_Pressure_Rise to @@SPUNIT@@ for gardenBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit1_FrontRow_MiddleFloor Fan_Pressure_Rise to @@SPUNIT@@ for gardenBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit2_FrontRow_MiddleFloor Fan_Pressure_Rise to @@SPUNIT@@ for gardenBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit3_FrontRow_MiddleFloor Fan_Pressure_Rise to @@SPUNIT@@ for gardenBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit1_FrontRow_TopFloor Fan_Pressure_Rise to @@SPUNIT@@ for gardenBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit2_FrontRow_TopFloor Fan_Pressure_Rise to @@SPUNIT@@ for gardenBsmt
+		Change ZoneVentilation:DesignFlowRate Ventilation_unit3_FrontRow_TopFloor Fan_Pressure_Rise to @@SPUNIT@@ for gardenBsmt
