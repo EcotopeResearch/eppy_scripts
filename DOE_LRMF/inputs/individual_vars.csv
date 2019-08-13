@@ -1,0 +1,18 @@
+Description,jEplus - Variable,Object Type,Name,Value,Models
+Bsmt Wall Insulation Conductivity [W/m*K],@@BSMTWU@@,Material,bsmtwall_consol_layer,Conductivity,bsmt
+Floor Insulation Conductivity [W/m*K],@@BSMTWU@@,Material,floor_consol_layer,Conductivity,bsmt
+Bsmt heating setpoint temp [C],@@BSMTHTST@@,Schedule:Compact,heating_sch_bsmt,Field_4,bsmt
+Bsmt cooling setpoint temp [C],@@BSMTCLST@@,Schedule:Compact,cooling_sch_bsmt,Field_4,bsmt
+Corridor heating setpoint temp [C],@@CORHTST@@,Schedule:Compact,heating_sch_corr,Field_4,common
+Corridor cooling setpoint temp [C],@@CORCLST@@,Schedule:Compact,cooling_sch_corr,Field_4,common
+Exterior corridor Lights [W],@@LTGEXTCOR@@,Exterior:Lights,corrExtLights,Design_Level,garden
+Exterior Wall Insulation Conductivity [W/m*K],@@WALLU@@,Material,wall_consol_layer,Conductivity,idfs
+Ceiling Insulation Conductivity [W/m*K],@@CEILINGU@@,Material,ceil_consol_layer,Conductivity,idfs
+Slab Insulation Conductivity [W/m*K],@@SLABU@@,Material,slab_consol_layer,Conductivity,idfs
+Windows Ufactor [W/m2*K],@@WINU@@,WindowMaterial:SimpleGlazingSystem,Glass,UFactor,idfs
+Windows SHGC,@@SHGC@@,WindowMaterial:SimpleGlazingSystem,Glass,Solar_Heat_Gain_Coefficient,idfs
+Lighting Stairwell [W],@@LTGSTR@@,Exterior:Lights,stairLights,Design_Level,idfs
+Internal Parking Lights [W],@@LTGINTPKG@@,Exterior:Lights,intPrkLights,Design_Level,idfs
+External Parking Lights [W],@@LTGEXTPKG@@,Exterior:Lights,extPrkLights,Design_Level,idfs
+Unit heating setpoint temp [C],@@UNITHTST@@,Schedule:Compact,heating_sch_unit,Field_4,idfs
+Unit cooling setpoint temp [C],@@UNITCLST@@,Schedule:Compact,cooling_sch_unit,Field_4,idfs
