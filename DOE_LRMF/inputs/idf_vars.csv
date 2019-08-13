@@ -1,4 +1,4 @@
-﻿Description,jEplus - Variable,Object Type,Name,Value,Models,NameType,JEP
+Description,jEplus - Variable,Object Type,Name,Value,Models,NameType,JEP
 Building Name,@@NAME@@,Building,Name,Building_dict,idfs,dict,first
 Bsmt heating efficiency (COP),@@BSMTHTCOP@@,Coil:Heating:DX:SingleSpeed,BsmtDXheat_dict,Gross_Rated_Heating_COP,bsmt,dict,bsmt
 Bsmt Heating efficiency curves,@@BSMTHTCURVE_CAPFT@@,Coil:Heating:DX:SingleSpeed,BsmtDXheat_dict,Heating_Capacity_Function_of_Temperature_Curve_Name,bsmt,dict,bsmt
