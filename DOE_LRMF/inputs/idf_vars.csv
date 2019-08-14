@@ -17,7 +17,7 @@ Bsmt Ventilation Flowrate [m3/s],@@FLOWBSMT@@,ZoneVentilation:DesignFlowRate,Bsm
 Bsmt Ventilation SP [Pa],@@SPBSMT@@,ZoneVentilation:DesignFlowRate,BsmtVent_dict,Fan_Pressure_Rise,bsmt,dict,bsmt
 Bsmt HVAC Fan SP [Pa],@@SPHVACBSMT@@,Fan:OnOff,BsmtFan_dict,Pressure_Rise,bsmt,dict,bsmt
 Bsmt Wall Insulation Conductivity [W/m*K],@@BSMTWU@@,Material,bsmtwall_consol_layer,Conductivity,bsmt,ind,bsmt
-Floor Insulation Conductivity [W/m*K],@@BSMTWU@@,Material,floor_consol_layer,Conductivity,bsmt,ind,bsmt
+Floor Insulation Conductivity [W/m*K],@@FLOORU@@,Material,floor_consol_layer,Conductivity,bsmt,ind,bsmt
 Bsmt heating setpoint temp [C],@@BSMTHTST@@,Schedule:Compact,heating_sch_bsmt,Field_4,bsmt,ind,bsmt
 Bsmt cooling setpoint temp [C],@@BSMTCLST@@,Schedule:Compact,cooling_sch_bsmt,Field_4,bsmt,ind,bsmt
 Corridor heating efficiency (COP),@@CORHTCOP@@,Coil:Heating:DX:SingleSpeed,CorridorsDXheat_dict,Gross_Rated_Heating_COP,common,dict,common
